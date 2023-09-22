@@ -247,7 +247,7 @@ min-width: 996px;
 }
 
 .content-box{
-  height: 100vh;
+  
   box-sizing: border-box;
   background-color: white;
   // margin: 40px 10% 0 10%;
