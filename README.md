@@ -1,8 +1,10 @@
 # chanblog
 
-<img src="https://github.com/chanqaqhub/chanblog/assets/143981650/65652d98-926e-40e7-bf7e-d8098d5c7f11" width="666" />
+<img src="https://github.com/chanQvQ/chanblog/assets/145744078/80488746-be8f-4c94-b7de-a6a13fe61703" width="666" /> 
 </br>
-<img src="https://github.com/chanqaqhub/chanblog/assets/143981650/f9decff1-38cd-4a43-b6be-f30bd9a0af1b" width="666" />
+<img src="https://github.com/chanQvQ/chanblog/assets/145744078/cc741774-8e31-49f4-831c-04fec7e85131" width="666" />
+
+
 
 使用方法：</br></br>
 1.clone 下来 分别 npm i 初始化</br>
