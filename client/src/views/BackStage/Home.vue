@@ -1,7 +1,7 @@
 <template>
     <div class="common-layout">
       <el-container>
-        <el-aside width="" height=""><LeftNav></LeftNav></el-aside>
+        <el-aside width="" height="auto"><LeftNav></LeftNav></el-aside>
         <el-container style="height: 100vh;">
           
                 <el-header><TopNav></TopNav></el-header>
@@ -34,7 +34,18 @@ import TopNav from './TopNav.vue';
     
   
 }
+.el-main{
+  min-width: 
+  1140px;
+}
+.el-header{
+  min-width: 1140px;
+}
 
 
+
+</style>
+
+<style>
 
 </style>
