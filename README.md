@@ -5,7 +5,7 @@
 <img src="https://github.com/chanQvQ/chanblog/assets/145744078/cc741774-8e31-49f4-831c-04fec7e85131" width="666" />
 
 
-
+<b>暂未适配移动端~</b><br>
 使用方法：</br></br>
 1.clone 下来 分别 npm i 初始化</br>
 2.server:  node app.js</br>
