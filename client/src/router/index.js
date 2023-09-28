@@ -36,9 +36,14 @@ const router= createRouter({
     {
         name:'后台管理首页',
         path:'/BackStage/Home',
+        redirect:'/BackStage/HomeChart',
         component:()=> import('../views/BackStage/Home.vue'),
         meta:{needToken:1,title:'后台首页'},
         children:[
+            {
+                path:'/BackStage/HomeChart',
+                component:()=>import('../views/BackStage/Chart.vue')
+            },
             {
                 name:'笔记发布和编辑',
                 path:'/BackStage/Publish',
