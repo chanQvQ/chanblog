@@ -21,7 +21,10 @@
 <div class="container">
     <!-- 登录表单 -->
     <div class="login">
-
+      <div class="left">
+        <img src="../../assets/img/14.jpeg" alt="">
+      </div>
+      <div class="right">
         <!-- 登录 -->
             <el-form
             v-show="state.isLogin==1"
@@ -29,24 +32,25 @@
             :model="state.loginForm"
             status-icon
             :rules="rules"
-            label-width="150px"
+            label-width="0"
             class="demo-ruleForm"
             >
             <!-- 用户名 -->
-            <el-form-item label="用户名" prop="account">
-                <el-input
+            <el-form-item label="" prop="account" class="input">
+                <el-input 
                 v-model="state.loginForm.account"
                 autocomplete="off"
+                placeholder="请输入用户名"
                 
                 />
             </el-form-item>
 
-            <el-form-item label="密码" prop="password">
-                <el-input v-model="state.loginForm.password" type="password" autocomplete="off" />
+            <el-form-item label="" prop="password">
+                <el-input v-model="state.loginForm.password" type="password" autocomplete="off" placeholder="请输入密码" />
             </el-form-item>
            
            
-            <el-form-item>
+            <el-form-item >
                 <el-button type="primary" @click="submitForm(ruleFormRef)"
                 >登录</el-button
                 >
@@ -62,6 +66,7 @@
                 <el-input
                 v-model="state.forgetForm.account"
                 autocomplete="off"
+                
                 />
               </el-form-item>
 
@@ -87,6 +92,7 @@
             </el-form-item>
             <div class="forget" @click="returnLogin">返回登录</div>
             </el-form>
+          </div>
        
     </div>
 
@@ -205,7 +211,8 @@ function restPassword(){
 }
 
 function resetForm(){//清空
-
+   state.loginForm.account=null
+   state.loginForm.password=null
 }
 
 
@@ -213,27 +220,47 @@ function resetForm(){//清空
 </script>
 
 <style scoped lang="less">
-  
+  // *{
+  //   outline: 1px solid red;
+  // }
   .container{
+      //  max-width: 100vw;
+      min-width: 996px;
        display: flex;
        justify-content: center;
        align-items: center;
        height: 100vh;
-       background-image: url(../../assets/img/7.jpg);
+       background-image: url(../../assets/img/14.jpeg);
        background-repeat: no-repeat;
        background-size: cover;
        
   }
-  .login{
 
+  .login{
+    background-color:rgba(51, 17, 66, .8) ;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 30vw;
-    background-color: white;
-    box-shadow: 0 0 5px pink;
-    opacity: .9;
+    .left{
+      img{
+        width:500px ;
+        padding: 10px 10px;
+      
+
+      }
+    }
+    .right{
+      padding-right: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          ::v-deep .el-form-item__content{
+            display: flex;
+            justify-content: center;
+
+          }
+
+      
+    }
+
     .forget{
         font-size: 14px;
         text-align: center;
